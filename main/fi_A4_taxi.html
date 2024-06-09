@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flying Taxi Co.</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+    }
+    .header, .footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+    .main {
+      padding: 20px;
+    }
+    .section {
+      background: #fff;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #b93232;
+    }
+    p {
+      color: #666;
+    }
+    .signup-form input, .signup-form button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    .signup-form button {
+      background: #0056b3;
+      color: white;
+      cursor: pointer;
+    }
+    .signup-form button:hover {
+      background: #004494;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome to Flying Taxi Co.</h1>
+    <p>The Future of Urban Transportation</p>
+  </div>
+
+  <div class="main">
+    <div class="section about">
+      <h2>About Us</h2>
+      <p>Flying Taxi Co. is revolutionizing urban mobility by offering fast, efficient, and sustainable flying taxi services. Our state-of-the-art electric vertical takeoff and landing (eVTOL) aircraft are designed to make urban air mobility accessible to everyone, reducing commute times and contributing to a cleaner environment.</p>
+    </div>
+
+    <div class="section services">
+      <h2>Our Services</h2>
+      <p>Experience the future of urban transport with our range of services designed to cater to your every need:</p>
+      <ul>
+        <li><strong>On-Demand Flights:</strong> Book a flight anytime, anywhere. Our app makes it easy to plan your journey.</li>
+        <li><strong>Subscription Plans:</strong> Frequent flyers can benefit from our subscription plans, offering discounted rates and priority booking.</li>
+        <li><strong>Corporate Partnerships:</strong> We offer tailored solutions for businesses, including employee commute programs and VIP transport services.</li>
+      </ul>
+    </div>
+
+    <div class="section newsletter">
+      <h2>Sign Up for Our Newsletter</h2>
+      <p>Stay updated with the latest news, offers, and updates from Flying Taxi Co. Sign up now!</p>
+      <form action="http://csusap.csu.edu.au/cgi-bin/echo_form" method="post" target="_blank" class="signup-form">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" maxlength="60" style="padding: 5px; margin-bottom: 10px;"><br>
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" maxlength="60" style="padding: 5px; margin-bottom: 10px;"><br>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" maxlength="60" required style="padding: 5px; margin-bottom: 10px;"><br>
+        <fieldset>
+          <legend>Age Range:</legend>
+          <input type="radio" id="age1" name="age" value="15-25"><label for="age1">15-25</label><br>
+          <input type="radio" id="age2" name="age" value="26-35"><label for="age2">26-35</label><br>
+          <input type="radio" id="age3" name="age" value="36-45"><label for="age3">36-45</label><br>
+          <input type="radio" id="age4" name="age" value="46-55"><label for="age4">46-55</label><br>
+          <input type="radio" id="age5" name="age" value="55+"><label for="age5">55+</label>
+        </fieldset>
+        <fieldset>
+          <legend>Services:</legend>
+          <input type="checkbox" id="service1" name="service1" value="on-demand-flight"><label for="service1">On-Demand Flight Booking</label><br>
+          <input type="checkbox" id="service2" name="service2" value="subscription-plan"><label for="service2">Subscription Plan</label><br>
+          <input type="checkbox" id="service3" name="service3" value="corporate-partnership"><label for="service3">Corporate Partnership</label><br>
+          <input type="checkbox" id="service4" name="service4" value="vip-transport"><label for="service4">VIP Transport Service</label><br>
+          <input type="checkbox" id="service5" name="service5" value="event-transport"><label for="service5">Event Transport Service</label>
+        </fieldset>
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" cols="60" rows="3" style="padding: 5px; margin-bottom: 10px;"></textarea><br>
+        <input type="submit" value="Submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+        <input type="reset" value="Reset" style="padding: 10px 20px; background-color: #f44336; color: white; border: none; cursor: pointer;">
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2023 Flying Taxi Co. All rights reserved.</p>
+  </div>
+</body>
+<script src="signup.js"></script>
+</html>
